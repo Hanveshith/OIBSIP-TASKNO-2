@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fade-in 1s ease-out;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: slide-in-top 1s ease-out;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .left img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    animation: zoom-in 1s ease-out;
+  }
+  
+  .right {
+    flex-basis: 60%;
+    animation: slide-in-right 1s ease-out;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 24px;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  p {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    margin-left: 20px;
+    list-style: disc;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  blockquote {
+    font-style: italic;
+    text-align: center;
+    color: #777;
+    margin-top: 30px;
+    animation: slide-in-bottom 1s ease-out;
+    border-left: 3px solid #007bff;
+    padding-left: 20px;
+  }
+  
+  .link {
+    text-align: center;
+    margin-top: 30px;
+    animation: slide-in-bottom 1s ease-out;
+  }
+  
+  .link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Additional Animations */
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-in-top {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-in-right {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoom-in {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-in-bottom {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
